@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#303957">
+  <title>Summer Scrapbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <p class="eyebrow">YOUR PERSONAL MEMORY BOOK</p>
+      <h1>Summer Scrapbook <span>🐚</span></h1>
+      <p class="subheading">A little place for your favorite moments</p>
+    </header>
+
+    <section class="book-area" aria-label="Інтерактивний фотоальбом">
+      <button class="edge-control left-control" id="prevEdge" aria-label="Попередня сторінка">‹</button>
+      <div class="book-clip">
+        <div class="book" id="book">
+          <div id="insidePages"></div>
+        </div>
+      </div>
+      <button class="edge-control right-control" id="nextEdge" aria-label="Наступна сторінка">›</button>
+    </section>
+
+    <nav class="book-controls" aria-label="Керування альбомом">
+      <button id="prevBtn" aria-label="Назад">←</button>
+      <span id="pageCount">1 / 8</span>
+      <button id="nextBtn" aria-label="Далі">→</button>
+    </nav>
+    <p class="hint">Гортай свайпом або натискай на краї альбому</p>
+    <p class="edit-hint">Натисни на порожній блок, щоб додати фото · Текст можна редагувати</p>
+  </main>
+  <input type="file" id="photoPicker" accept="image/*" hidden>
+  <script src="js/app.js"></script>
+</body>
+</html>
